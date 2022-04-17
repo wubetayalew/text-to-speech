@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background-color: #5256ad;
+}
+.wrapper {
+  background-color: #fff;
+  width: 370px;
+  border-radius: 20px;
+  padding: 25px 30px;
+}
+.wrapper header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+.wrapper form {
+  margin: 35px 0 20px;
+}
+.wrapper .row {
+  display: flex;
+  flex-direction: column;
+}
+form .row label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+form :where(textarea, select, button) {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+form .row textarea {
+  border: 1px solid #999;
+  resize: none;
+  height: 110px;
+  font-size: 15px;
+  padding: 8px 10px;
+  /* box-shadow: 1px 1px 20px 0px #92aad7;  */
+}
+form .row .outer {
+  height: 47px;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+form .row select {
+  font-size: 14px;
+}
+button {
+  background-color: #5256ad;
+  color: white;
+  height: 47px;
+  font-size: 17px;
+  margin-top: 10px;
+  cursor: pointer;
+}
